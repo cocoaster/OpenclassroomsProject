@@ -1,0 +1,556 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap");
+* {
+  box-sizing: inherit;
+}
+body {
+  font-family: "Raleway", sans-serif;
+  margin: 0px;
+}
+section {
+  margin: 0px 50px 0px 50px;
+}
+
+/***Onglets en haut à droite***/
+.navtab {
+  list-style: none;
+  position: absolute;
+  position: relative;
+  margin-top: 30px;
+  padding-top: 30px;
+}
+.tablist {
+  display: flex;
+  align-content: flex-end;
+  list-style-type: none;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.tabs {
+  font-size: 16px;
+  text-decoration: none;
+  color: #000000;
+  padding: 41px;
+  color: #000000;
+  padding-top: 43px;
+}
+.tabs:hover {
+  border-top: 4px solid #0065fc;
+  color: #0065fc;
+}
+.tabs:active {
+  border-top: 4px solid #0065fc;
+  color: #0065fc;
+}
+#logo {
+  margin-left: 17px;  
+}
+
+/*** section1 Recherche et Filtres***/
+h1 {
+  font-size: 23px;
+  font-weight: 1500;
+  margin-top: 45px;
+  margin-bottom: 10px;
+}
+.subtitle {
+  color: #292828;
+  margin-top: 3px;
+  margin-bottom: 20px;
+}
+
+/***mise en forme de la barre de recherche***/
+#searchbar {
+  display: flex;
+  align-items: center;
+}
+#locationsearch {
+  padding: 18px;
+  border: 0.5px solid #f2f2f2;
+}
+#locationsearch:hover {
+  box-shadow: -0.5px 1px 1px 2px #e8effa;
+  border: 0.5px solid #e8effa;
+}
+.locationicon {
+  flex: 1.5;
+  padding: 16px 18px 16px 20px;
+  border-radius: 15px 0px 0px 15px;
+  background-color: #f2f2f2;
+  font-size: 20px;
+}
+form input::placeholder {
+  text-decoration: none;
+  padding-right: 100px;
+  font-family: raleway, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  color: #000000;
+  width: 100%;
+}
+form input[type="submit"] {
+  padding: 13px;
+  font-family: raleway, sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #0065fc;
+  border-color: #0065fc;
+  border-radius: 0px 18px 18px 0px;
+}
+form input[type="submit"]:hover {
+  box-shadow: 0px 0px 0px 1px #7e7cef;
+  cursor: grab;
+}
+form {
+  margin-bottom: 30px;
+}
+
+/***Les filters***/
+#filters {
+  display: flex;
+  align-items: center;
+}
+.container {
+  margin-left: 25px;
+  position: relative;
+  padding: 13px 18px 13px 60px;
+  border: 3px solid #dedcdc;
+  border-radius: 50px;
+}
+.container:hover {
+  box-shadow: -1px 1px 1px 2px #e8effa;
+  border: 2px solid #dedcdc;
+}
+.icons {
+  color: #0065fc;
+  position: absolute;
+  left: -2px;
+  top: -1px;
+}
+.circle1 {
+  width: 51px;
+  height: 51px;
+  position: relative;
+  background-color: #deebff;
+  border-radius: 50px;
+}
+.circle1:hover {
+  box-shadow: -1px 1px 1px 2px #e8effa;
+  color: #448cf8;
+}
+.size1 {
+  font-size: 17px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+.size2 {
+  font-size: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+.size3 {
+  font-size: 18px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+.size4 {
+  font-size: 18px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+.boldfont {
+  font-family: raleway, sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+/***Les hébergements section2***/
+#info {
+  margin: 15px 0px 25px 10px;
+  display: flex;
+  align-items: center;
+}
+#circle2 {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  border: 1px solid #0065fc;
+  border-radius: 50px;
+}
+#symbolinfo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #0065fc;
+  border-radius: 100px;
+  padding: 5px;
+}
+#note {
+  font-family: raleway, sans-serif;
+  font-size: 18px;
+  margin-left: 15px;
+}
+
+/***Liste des hébergements***/
+#boxgdfather {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+#leftpanel {
+  border-radius: 20px;
+  width: 62%;
+  height: 650px;
+  padding: 2%;
+  background-color: #f2f2f2;
+}
+h3 {
+  margin-left: 3%;
+  font-family: raleway, sans-serif;
+  font-size: 23px;
+}
+.lign {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+.linkcard {
+  text-decoration: none;
+  margin: 2%;
+  width: 98%;
+  height: 200px;
+}
+.whitecard {
+  width: 100%;
+  height: 200px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px 10px #e8effa;
+  transition-delay: 0.3s ease-in-out;
+}
+.whitecard:hover {
+  box-shadow: 0px 2px 5px 3px #cbcaca;
+}
+.stylimage {
+  width: 97%;
+  height: 130px;
+  margin-top: 3px;
+  margin-left: 1.5%;
+  margin-bottom: 0px;
+  border-radius: 10px 10px 0px 0px;
+  object-fit: cover;
+}
+h4 {
+  margin-top: 2px;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  font-family: raleway, sans-serif;
+  font-size: 0.97rem;
+  color: #000000;
+}
+.fontcard1 {
+  margin: 0px;
+  margin-left: 10px;
+  font-family: raleway, sans-serif;
+  font-size: 0.83rem;
+  color: #000000;
+}
+.stars1 {
+  margin-left: 7px;
+  margin-top: 0px;
+}
+.bluestars {
+  font-size: 12px;
+  padding: 3px;
+  color: #0065fc;
+  width: 2%;
+}
+.graystars {
+  font-size: 12px;
+  padding: 3px;
+  color: rgb(183, 176, 176);
+  width: 2%;
+}
+h5 {
+  margin-left: 3%;
+  margin-top: 33px;
+  font-family: raleway, sans-serif;
+  font-size: 18px;
+  color: #000000;
+}
+#linkdisplay {
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+#linkdisplay:hover {
+  text-shadow: 2px 0px 4px rgba(185, 185, 185, 0.99);
+}
+
+/***Panneau de droite Les plus populaires***/
+#rightpannel {
+  width: 31%;
+  height: 682px;
+  padding-top: 23.9px;
+  margin-bottom: 0px;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  padding-bottom: 0px;
+}
+#titlezone {
+  display: flex;
+  align-items: center;
+  margin-bottom: 13px;
+}
+h6 {
+  height: 27px;
+  margin:36px 0px 23px 30px;
+  font-family: raleway, sans-serif;
+  font-size: 23px;
+}
+.blackstar {
+  font-size: 20px;
+  margin-left: 85px;
+  margin-right: 15px;
+}
+#blocimg {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: space-around;
+  height: 555px;
+}
+.linkcard2 {
+  text-decoration: none;
+  margin: 2%;
+  width: 100%;
+  height: 158px;
+}
+.rightcard {
+  display: flex;
+  width: 90%;
+  height: 158px;
+  margin: 0px 0px 0px 13px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 2px 10px 3px #e8effa;
+}
+.rightcard:hover {
+  box-shadow: 0px 2px 5px 3px #cbcaca;
+}
+.stylimage2 {
+  width: 45%;
+  height: 150px;
+  margin-top: 3px;
+  margin-left: 2%;
+  margin-bottom: 0px;
+  border-radius: 10px 0px 0px 10px;
+  object-fit: cover;
+}
+.fontcard2 {
+  margin-top: 7px;
+  margin-bottom: 53px;
+  margin-left: 10px;
+  font-family: raleway, sans-serif;
+  font-size: 0.83rem;
+  color: #000000;
+}
+.textzone {
+  padding-top: 13px;
+  padding-left: 10px;
+}
+
+/***Les Activités à Marseille ***/
+h7 {
+  font-family: raleway, sans-serif;
+  font-size: 23px;
+  font-weight: bolder;
+  color: #000000;
+}
+#boxactivities {
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/***box1***/
+.box1and3 {
+  width: 23%;
+  justify-content: center;
+  display: flex;
+}
+.linkbox1and3 {
+  text-decoration: none;
+  width: 100%;
+  height: 400px;
+}
+
+.whitecard2 {
+  width: 100%;
+  height: 400px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px 3px #e8effa;
+}
+.whitecard2:hover {
+  box-shadow: 0px 2px 5px 3px #cbcaca;
+}
+.stylimage3 {
+  width: 100%;
+  height: 350px;
+  border-radius: 10px 10px 0px 0px;
+  object-fit: cover;
+}
+
+/***box2***/
+.box2 {
+  width: 23%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/***img haut***/
+#linkbox2top {
+  text-decoration: none;
+  width: 100%;
+  height: 210px;
+}
+.whitecard3 {
+  width: 100%;
+  height: 210px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px 3px #e8effa;
+}
+.whitecard3:hover {
+  box-shadow: 0px 2px 5px 3px #cbcaca;
+}
+.styleimage4 {
+  width: 100%;
+  height: 160px;
+  border-radius: 10px 10px 0px 0px;
+  object-fit: cover;
+}
+/***img bas***/
+#linkbox2bottom {
+  text-decoration: none;
+  width: 100%;
+  height: 170px;
+}
+.whitecard4 {
+  width: 100%;
+  height: 170px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px 3px #e8effa;
+}
+.whitecard4:hover {
+  box-shadow: 0px 2px 5px 3px #cbcaca;
+}
+.stylimage5 {
+  width: 100%;
+  height: 120px;
+  border-radius: 10px 10px 0px 0px;
+  object-fit: cover;
+}
+
+/***box3***/
+.stylimage3 {
+  width: 100%;
+  height: 350px;
+  border-radius: 10px 10px 0px 0px;
+  object-fit: cover;
+}
+
+/***box4***/
+.box4 {
+  width: 23%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.linkbox4 {
+  text-decoration: none;
+  width: 100%;
+  height: 180px;
+}
+/***img haut et bas***/
+.whitecard5 {
+  width: auto;
+  height: 180px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px 3px #e8effa;
+}
+.whitecard5:hover {
+  box-shadow: 0px 2px 5px 3px #cbcaca;
+}
+.stylimage6 {
+  border-radius: 10px 10px 0px 0px;
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+}
+
+/***footer***/
+footer {
+  height: 200px;
+  margin-top: 65px;
+  background-color: #f2f2f2;
+  display: flex;
+  margin-left: 0px;
+  padding: 60px 20px 0px 20px;
+}
+h8 {
+  font-size: 18px;
+  font-family: raleway, sans-serif;
+  font-weight: bolder;
+  color: #000000;
+  margin: 30px;
+}
+.footerbox {
+  display: block;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+.footerlist {
+  display: block;
+  position: relative;
+  list-style-type: none;
+  padding: 20px 0px 20px 20px;
+  margin: 10px;
+  width: 100%;
+  height: 100px;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+.footerli {
+  padding-bottom: 15px;
+}
+@media screen and (max-width: 1125px) {
+}
+@media screen and (max-width: 992px) {
+}
+@media screen and (max-width: 768px) {
+}
